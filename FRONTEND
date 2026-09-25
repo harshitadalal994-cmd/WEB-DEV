@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Student Management System</h1>
+</header>
+
+<main class="dashboard">
+
+    <div class="card">
+        <h2>Attendance</h2>
+        <p id="attendance">Loading...</p>
+    </div>
+
+    <div class="card">
+        <h2>Average Marks</h2>
+        <p id="marks">Loading...</p>
+    </div>
+
+    <div class="card">
+        <h2>Assignments</h2>
+        <p id="assignments">Loading...</p>
+    </div>
+
+</main>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
