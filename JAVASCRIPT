@@ -1,0 +1,24 @@
+async function loadDashboard() {
+
+    try {
+        const response = await fetch(
+            "http://localhost:8080/api/students/1/dashboard"
+        );
+
+        const data = await response.json();
+
+        document.getElementById("attendance").textContent =
+            data.attendance + "%";
+
+        document.getElementById("marks").textContent =
+            data.averageMarks;
+
+        document.getElementById("assignments").textContent =
+            data.pendingAssignments;
+
+    } catch (error) {
+        console.error("Error loading dashboard:", error);
+    }
+}
+
+loadDashboard();
