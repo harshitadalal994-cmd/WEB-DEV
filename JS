@@ -1,0 +1,14 @@
+@RestController
+@RequestMapping("/api/students")
+public class StudentController {
+
+    @GetMapping("/{id}")
+    public Student getStudent(@PathVariable Long id) {
+        return studentService.getStudentById(id);
+    }
+
+    @GetMapping("/{id}/attendance")
+    public double getAttendance(@PathVariable Long id) {
+        return attendanceService.calculateAttendance(id);
+    }
+}
